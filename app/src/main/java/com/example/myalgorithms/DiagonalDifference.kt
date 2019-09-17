@@ -64,13 +64,10 @@ Note: |x| is the absolute value of x*/
 private fun diagonalDifference(arr: Array<Array<Int>>): Int {
     var leftResult = 0
     var rightResult = 0
+    var t = arr.size - 1
     for ((j, i) in arr.indices.withIndex()) {
         leftResult += arr[i][j]
-        continue
-    }
-    var t = arr.size - 1
-    for (x in arr.indices) {
-        rightResult += arr[x][t]
+        rightResult += arr[i][t]
         t--
         continue
     }
