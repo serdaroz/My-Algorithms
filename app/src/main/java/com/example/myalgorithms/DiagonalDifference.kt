@@ -1,8 +1,8 @@
 package com.example.myalgorithms
 
 
-/*
-https://www.hackerrank.com/challenges/diagonal-difference/problem
+/**
+ *@link https://www.hackerrank.com/challenges/diagonal-difference/problem
 
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
@@ -58,7 +58,6 @@ Sum across the secondary diagonal: 4 + 5 + 10 = 19
 Difference: |4 - 19| = 15
 
 Note: |x| is the absolute value of x*/
-
 
 
 private fun diagonalDifference(arr: Array<Array<Int>>): Int {
